@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		6FF17CCA2059CC1D00695E04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF17CC92059CC1D00695E04 /* AppDelegate.swift */; };
-		6FF17CCC2059CC1D00695E04 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF17CCB2059CC1D00695E04 /* ViewController.swift */; };
+		6FF17CCC2059CC1D00695E04 /* CustomCellsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF17CCB2059CC1D00695E04 /* CustomCellsViewController.swift */; };
 		6FF17CCF2059CC1D00695E04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FF17CCD2059CC1D00695E04 /* Main.storyboard */; };
 		6FF17CD12059CC1D00695E04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FF17CD02059CC1D00695E04 /* Assets.xcassets */; };
 		6FF17CD42059CC1D00695E04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FF17CD22059CC1D00695E04 /* LaunchScreen.storyboard */; };
 		6FF17CDF2059CC1D00695E04 /* Custom_CellsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF17CDE2059CC1D00695E04 /* Custom_CellsTests.swift */; };
 		6FF17CEA2059CC1D00695E04 /* Custom_CellsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF17CE92059CC1D00695E04 /* Custom_CellsUITests.swift */; };
+		6FF17CF82059CDFE00695E04 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF17CF72059CDFE00695E04 /* CustomCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,7 @@
 /* Begin PBXFileReference section */
 		6FF17CC62059CC1D00695E04 /* Custom Cells.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Custom Cells.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FF17CC92059CC1D00695E04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6FF17CCB2059CC1D00695E04 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6FF17CCB2059CC1D00695E04 /* CustomCellsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCellsViewController.swift; sourceTree = "<group>"; };
 		6FF17CCE2059CC1D00695E04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6FF17CD02059CC1D00695E04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6FF17CD32059CC1D00695E04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,7 @@
 		6FF17CE52059CC1D00695E04 /* Custom CellsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Custom CellsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FF17CE92059CC1D00695E04 /* Custom_CellsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Custom_CellsUITests.swift; sourceTree = "<group>"; };
 		6FF17CEB2059CC1D00695E04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6FF17CF72059CDFE00695E04 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				6FF17CC92059CC1D00695E04 /* AppDelegate.swift */,
-				6FF17CCB2059CC1D00695E04 /* ViewController.swift */,
+				6FF17CCB2059CC1D00695E04 /* CustomCellsViewController.swift */,
+				6FF17CF72059CDFE00695E04 /* CustomCell.swift */,
 				6FF17CCD2059CC1D00695E04 /* Main.storyboard */,
 				6FF17CD02059CC1D00695E04 /* Assets.xcassets */,
 				6FF17CD22059CC1D00695E04 /* LaunchScreen.storyboard */,
@@ -259,7 +262,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6FF17CCC2059CC1D00695E04 /* ViewController.swift in Sources */,
+				6FF17CCC2059CC1D00695E04 /* CustomCellsViewController.swift in Sources */,
+				6FF17CF82059CDFE00695E04 /* CustomCell.swift in Sources */,
 				6FF17CCA2059CC1D00695E04 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,7 +431,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3YTYXM9Q86;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Custom Cells/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mycompany.Custom-Cells";
@@ -442,7 +446,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3YTYXM9Q86;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Custom Cells/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mycompany.Custom-Cells";
